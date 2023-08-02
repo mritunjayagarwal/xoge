@@ -8,9 +8,9 @@ Version      : 1.5
 LANDING PAGE JS
 *===================================*/
 
-(function($) {
+(function ($) {
 	'use strict';
-   
+
 	/*===================================*
 	04. BACKGROUND ANIMATION JS
 	*===================================*/
@@ -128,38 +128,41 @@ LANDING PAGE JS
 				},
 				"retina_detect": true
 			}
-	
+
 		);
 	}
-	
-	  
-  	/*===================================*
-	05. BACKGROUND ANIMATION JS
-	*===================================*/
-	 $('.roadmap').owlCarousel({
-	     loop: false,
-	     margin: 30,
-	     nav: true,
-	     navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
-	     responsive: {
-	         0: {
-	             items: 1,
 
-	         },
-	         380: {
-	             items: 2,
-	             margin: 15,
-	         },
-	         600: {
-	             items: 3
-	         },
-	         1000: {
-	             items: 5
-	         },
-	         1199: {
-	             items: 5
-	         }
-	     }
-	 });	
+
+	/*===================================*
+05. BACKGROUND ANIMATION JS
+*===================================*/
+	$('.roadmap').owlCarousel({
+		loop: false,
+		margin: 30,
+		nav: true,
+		autoplay: true,
+		autoplayTimeout: 2000,
+		autoplayHoverPause: true,
+		navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
+		responsive: {
+			0: {
+				items: 1,
+
+			},
+			380: {
+				items: 2,
+				margin: 15,
+			},
+			600: {
+				items: 3
+			},
+			1000: {
+				items: 5
+			},
+			1199: {
+				items: 5
+			}
+		}
+	});
 })(jQuery);
 
